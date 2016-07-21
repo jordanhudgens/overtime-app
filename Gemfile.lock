@@ -81,6 +81,7 @@ GEM
       railties (>= 3.0.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    gritter (1.2.0)
     i18n (0.7.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -204,6 +205,7 @@ DEPENDENCIES
   database_cleaner
   devise (~> 4.2)
   factory_girl_rails (~> 4.7)
+  gritter (= 1.2.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)
