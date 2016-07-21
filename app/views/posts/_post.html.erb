@@ -14,4 +14,7 @@
 	<td>
 		<%= link_to 'Edit', edit_post_path(post), id: "edit_#{post.id}" %>
 	</td>
+	<td>
+		<%= link_to 'Delete', post_path(post), method: :delete, id: "delete_post_#{post.id}_from_index", data: { confirm: 'Are you sure?' } %>
+	</td>
 </tr>
