@@ -21,4 +21,5 @@ RSpec.configure do |config|
   config.after(:each) { DatabaseCleaner.clean }
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
+  config.include FactoryGirl::Syntax::Methods
 end
