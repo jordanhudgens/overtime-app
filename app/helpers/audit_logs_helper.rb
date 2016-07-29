@@ -1,0 +1,2 @@
+module AuditLogsHelper
+end
