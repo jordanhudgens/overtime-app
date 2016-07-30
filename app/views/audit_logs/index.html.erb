@@ -1,1 +1,28 @@
-<%= render @audit_logs %>
+<h1>Audit Log Dashboard</h1>
+
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>
+				#
+			</th>
+			<th>
+				Employee
+			</th>
+			<th>
+				Week Starting
+			</th>
+			<th>
+				Confirmed At
+			</th>
+			<th>
+				Status
+			</th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<%= render @audit_logs %>
+	</tbody>
+</table>
