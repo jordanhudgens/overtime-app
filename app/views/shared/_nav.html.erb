@@ -16,7 +16,7 @@
 		<%= render 'shared/audit_log_tab' if policy(AuditLog).index? %>
 
 		<li class="<%= active?(new_post_path) %>">
-			<%= link_to "Add New Entry", new_post_path, id: 'new_post_from_nav' %>
+			<%= link_to "Request Overtime", new_post_path, id: 'new_post_from_nav' %>
 		</li>
 		<li class="dropdown pull-right">
 			 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Options<strong class="caret"></strong></a>
