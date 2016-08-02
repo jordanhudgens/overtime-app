@@ -1,0 +1,7 @@
+<li class="<%= active?(posts_path) %>">
+	<%= link_to "Entries", posts_path %>
+</li>
+
+<li class="<%= active?(new_post_path) %>">
+	<%= link_to "Request Overtime", new_post_path, id: 'new_post_from_nav' %>
+</li>
