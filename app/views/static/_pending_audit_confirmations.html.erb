@@ -1,3 +1,3 @@
 <% pending_audit_confirmations.each do |pending_audit_confirmation| %>
-	<%= link_to "I confirm that I did not perform any overtime for the week of: #{pending_audit_confirmation.start_date}", confirm_audit_log_path(pending_audit_confirmation), class: 'btn btn-primary btn-block btn-lg', id: "confirm_#{pending_audit_confirmation.id}", data: { confirm: 'Are you sure you want to confirm that you did not perform any overtime?' } %>
+	<%= link_to "I confirm that I did not perform any overtime for the week of: #{pending_audit_confirmation.start_date} through #{pending_audit_confirmation.start_date + 6.days}", confirm_audit_log_path(pending_audit_confirmation), class: 'btn btn-primary btn-block btn-lg btn-employee-home', id: "confirm_#{pending_audit_confirmation.id}", data: { confirm: 'Are you sure you want to confirm that you did not perform any overtime?' } %>
 <% end %>
