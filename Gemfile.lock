@@ -102,6 +102,7 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     gritter (1.2.0)
+    honeybadger (2.5.1)
     i18n (0.7.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -252,6 +253,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails (~> 4.7)
   gritter (= 1.2.0)
+  honeybadger (~> 2.0)
   jbuilder (~> 2.0)
   jquery-rails
   kaminari (~> 0.17.0)
