@@ -24,11 +24,15 @@ describe 'navigate' do
   		expect(page).to have_content(/Posts/)
   	end
 
-    xit 'has a list of posts' do
-      post1 = FactoryGirl.build_stubbed(:post)
-      post2 = FactoryGirl.build_stubbed(:second_post)
+    it 'has a list of posts' do
+      post
+      second_post = FactoryGirl.create(:second_post)
+      second_post.update!(user_id: user.id)
+
       visit posts_path
-      expect(page).to have_content(/Work|content/)
+
+      expect(page).to have_text(post.work_performed)
+      expect(page).to have_text(second_post.work_performed)
     end
 
     it 'has a scope so that only post creators can see their posts' do
